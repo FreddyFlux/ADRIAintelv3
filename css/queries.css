@@ -1,0 +1,459 @@
+/****************************/
+/* SMALLER LAPTOPS */
+/* BELOW 1344px (1344/16px=84em) */
+/****************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .section-profile {
+    padding: 9.6rem 7.4rem;
+  }
+
+  .profile-author-box {
+    padding-left: 2.4rem;
+  }
+
+  .profile-text-box {
+    padding-left: 2.4rem;
+  }
+
+  .brokerage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 9.6rem;
+    /* padding: 0 3.2rem; */
+    margin: 0 auto;
+  }
+}
+
+/****************************/
+/* TABLETS LANDSCAPE */
+/* BELOW 1200px (1200/16px=75em) */
+/****************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .hero-description {
+    margin-bottom: 3.2rem;
+  }
+
+  .profile-text-box {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+
+  .profile-author {
+    font-size: 3.6rem;
+  }
+
+  .profile-img-box {
+    margin-left: 7rem;
+  }
+
+  .profile-img {
+    transform: scale(1.35);
+  }
+}
+
+/****************************/
+/* TABLETS */
+/* BELOW 944px (944/16=59) */
+/****************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.4rem;
+  }
+
+  .section-profile {
+    padding: 9.6rem 0 0 0;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr 1fr 0.6fr;
+    gap: 1.8rem;
+  }
+
+  .profile-author-box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-author {
+    font-size: 4.4rem;
+  }
+
+  .profile-job {
+    font-size: 2.4rem;
+  }
+
+  .profile-img-box {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    transform: translateX(0);
+    padding-left: 0;
+    justify-content: end;
+    margin-left: 0;
+  }
+
+  .profile-img {
+    transform: scale(1);
+    width: 100%;
+  }
+
+  .profile-text-box {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 2.4rem 4.4rem;
+    /* margin-bottom: 1.8rem; */
+  }
+
+  .profile-contact {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: space-around;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    font-size: 2.6rem;
+  }
+
+  .profile-link:hover,
+  .profile-link:active {
+    font-size: 2.6rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+    /* Hide navigation */
+
+    /* 1: Hide it visually */
+    opacity: 0;
+
+    /* 2: Make it unaccessible to mouse and keyobard*/
+    pointer-events: none;
+
+    /* 3: Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    font-size: 3rem;
+  }
+}
+/****************************/
+/* SMALLER TABLETS */
+/* BELOW 704px (704px/16=44em) */
+/****************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .consulting {
+    grid-template-columns: 1fr;
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .consulting-txt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .consulting-img-box {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .consulting-img {
+    width: 60%;
+  }
+
+  .brokerage {
+    grid-template-columns: 1fr;
+  }
+
+  .brokerage-txt-box {
+    padding-left: 3.2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .padding-right-lg {
+    padding-right: 3.2rem !important;
+  }
+
+  .brokerage-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brokerage-img {
+    width: 60%;
+  }
+
+  .profile-grid {
+    gap: 1.8rem;
+  }
+
+  .profile-author {
+    font-size: 3rem;
+  }
+
+  .profile-job {
+    font-size: 2rem;
+  }
+
+  .profile-text-box {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1.2rem 3.2rem;
+    /* margin-bottom: 1.8rem; */
+  }
+
+  .profile-contact {
+    padding: 0 3.2rem;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    font-size: 2rem;
+  }
+
+  .profile-link:hover,
+  .profile-link:active {
+    font-size: 2rem;
+  }
+
+  .section-cta {
+    padding-bottom: 4.8rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-message {
+    grid-column: 1;
+  }
+
+  .grid--footer {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .logo-col {
+    grid-row: 1;
+    grid-column: span 1;
+  }
+
+  .address-col {
+    grid-column: span 1;
+    grid-column-start: 2;
+    grid-row: 1;
+  }
+
+  .nav-col {
+    grid-column: span 2;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copyright {
+    margin-top: 3.2rem;
+  }
+}
+
+/****************************/
+/*  Phones */
+/* BELOW 544 (544px/16=34em) */
+/****************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
