@@ -457,6 +457,22 @@
     width: 80%;
   }
 
+  .hero-text-box .btn--primary {
+    margin-right: 0 !important;
+  }
+
+  .hero-text-box .btn--primary {
+    margin-bottom: 1.8rem !important;
+  }
+
+  /* .margin-right-sm {
+    margin-right: 0 !important;
+  }
+
+  .hero-description .btn--primary {
+    margin-bottom: 1.8rem;
+  } */
+
   .logos img {
     height: 1.2rem;
   }

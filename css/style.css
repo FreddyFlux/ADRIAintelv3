@@ -398,7 +398,11 @@
 }
 
 .cta-form input::placeholder {
-  color: #555;
+  color: #999;
+}
+
+.form-message textarea::placeholder {
+  color: #999;
 }
 
 .cta *:focus {
