@@ -269,12 +269,12 @@
 }
 
 .profile-author {
-  color: #fcd75f;
+  color: #feedb8;
   font-size: 4.6rem;
 }
 
 .profile-job {
-  color: #fee9a6;
+  color: #feedb8;
   font-size: 1.8rem;
   margin-top: -1.2rem;
   margin-bottom: 1.2rem;
@@ -333,6 +333,29 @@
 .section-cta {
   padding: 4.8rem 0 12.8rem 0;
   background-color: #fffbed;
+}
+
+/* FEATURES */
+.feature-icon {
+  color: #1f604f;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fef2ca;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #1f604f;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 .cta {
